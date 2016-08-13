@@ -1,14 +1,11 @@
 package LeetCode.Hard;
 
-// Completed.
-// find the minimum health requirement to be able to reach the end in a dungeon board.
-
+// Solution to the Dungeon Game problem on leetcode.com 
+// Finds the minimum health requirement to be able to reach the end (lower-right) in a dungeon board from start (upper-left).
+// health changes according to the value of the cell visited, need at least 1 health to stay alive at any time during the game.
+// can only move one step to the right or one step to the left.
 
 public class DungeonGame {
-	
-	
-	
-	
 	public int calculateMinimumHP(int[][] dungeon) {
 		
 		if(dungeon == null || dungeon.length == 0 || dungeon[0].length == 0) return 0;
